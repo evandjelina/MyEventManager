@@ -21,6 +21,7 @@
         <activity android:name=".AddActivity"></activity>
         <activity android:name=".ListActivities"></activity>
         <activity android:name=".OpenCal"></activity>
+        <activity android:name=".About"></activity>
     </application>
 
     <uses-permission android:name="android.permission.VIBRATE"/>

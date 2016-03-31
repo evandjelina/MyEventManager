@@ -13,7 +13,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.mem.myeventmanager.MainActivity"
     tools:showIn="@layout/activity_main"
-    android:background="#f7f5f7"
+    android:background="#ff1a73"
     android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
 
     <Button
@@ -26,17 +26,20 @@
         android:layout_alignParentStart="true"
         android:clickable="true"
         android:onClick="addActivity"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:background="#ff1a75"
-        android:textColor="#ffffff"
+        android:background="#ffffff"
+        android:textColor="#e60059"
         android:textColorHighlight="#6f6e6e"
         android:textStyle="bold"
         android:layout_marginTop="150dp"
         android:elegantTextHeight="false"
         android:enabled="true"
         android:shadowColor="#ffffff"
-        android:layout_marginBottom="0dp" />
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="15dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -48,8 +51,8 @@
         android:layout_alignEnd="@+id/addActivity"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:background="#ff1a73"
-        android:textColor="#ffffff"
+        android:background="#ffffff"
+        android:textColor="#e60059"
         android:textColorHighlight="#6f6e6e"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
@@ -60,7 +63,10 @@
         android:soundEffectsEnabled="true"
         android:onClick="listActivity"
         android:layout_marginBottom="0dp"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="15dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -72,8 +78,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:background="#ff1a75"
-        android:textColor="#ffffff"
+        android:background="#ffffff"
+        android:textColor="#e60059"
         android:textColorHighlight="#6f6e6e"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
@@ -83,15 +89,18 @@
         android:shadowColor="#ffffff"
         android:soundEffectsEnabled="true"
         android:onClick="openCal"
-        android:layout_marginBottom="0dp" />
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="15dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Napusti aplikaciju"
         android:id="@+id/exitApp"
-        android:background="#ff1a75"
-        android:textColor="#ffffff"
+        android:background="#ffffff"
+        android:textColor="#e60059"
         android:textColorHighlight="#6f6e6e"
         android:textStyle="bold"
         android:clickable="true"
@@ -105,7 +114,10 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/resetActivity"
         android:layout_alignEnd="@+id/resetActivity"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="15dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -117,8 +129,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/openCalendar"
         android:layout_alignEnd="@+id/openCalendar"
-        android:background="#ff1a75"
-        android:textColor="#ffffff"
+        android:background="#ffffff"
+        android:textColor="#e60059"
         android:textColorHighlight="#6f6e6e"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
@@ -128,7 +140,10 @@
         android:shadowColor="#ffffff"
         android:soundEffectsEnabled="true"
         android:layout_marginBottom="0dp"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="15dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -145,12 +160,14 @@
         android:layout_marginBottom="0dp"
         android:textStyle="bold"
         android:textSize="35dp"
-        android:textColor="#e60059"
+        android:textColor="#ffffff"
         android:phoneNumber="false"
         android:password="false"
         android:gravity="center_horizontal"
         android:typeface="serif"
-        android:shadowColor="#c2c2c2" />
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="50"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -158,13 +175,15 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="MEM Team"
         android:id="@+id/txtMem"
-        android:textColor="#e60059"
+        android:textColor="#ffffff"
         android:layout_alignRight="@+id/exitApp"
         android:layout_alignEnd="@+id/exitApp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:clickable="true"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:onClick="aboutUS"
+        android:textStyle="bold" />
 
 </RelativeLayout>

@@ -74,6 +74,15 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void aboutUS(View view){
+        if(view.getId()==R.id.txtMem){
+            Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+            v.vibrate(50);
+            Intent intent = new Intent(this, About.class);
+            startActivity(intent);
+        }
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
