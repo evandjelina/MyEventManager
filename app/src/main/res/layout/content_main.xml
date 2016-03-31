@@ -32,10 +32,11 @@
         android:textColor="#ffffff"
         android:textColorHighlight="#6f6e6e"
         android:textStyle="bold"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="150dp"
         android:elegantTextHeight="false"
         android:enabled="true"
-        android:shadowColor="#ffffff" />
+        android:shadowColor="#ffffff"
+        android:layout_marginBottom="0dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -47,7 +48,7 @@
         android:layout_alignEnd="@+id/addActivity"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:background="#ff1a75"
+        android:background="#ff1a73"
         android:textColor="#ffffff"
         android:textColorHighlight="#6f6e6e"
         android:textStyle="bold"
@@ -57,7 +58,9 @@
         android:elegantTextHeight="false"
         android:shadowColor="#ffffff"
         android:soundEffectsEnabled="true"
-        android:onClick="listActivity" />
+        android:onClick="listActivity"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -79,30 +82,30 @@
         android:elegantTextHeight="false"
         android:shadowColor="#ffffff"
         android:soundEffectsEnabled="true"
-        android:onClick="openCal" />
+        android:onClick="openCal"
+        android:layout_marginBottom="0dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Napusti aplikaciju"
         android:id="@+id/exitApp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/openCalendar"
-        android:layout_alignEnd="@+id/openCalendar"
-        android:layout_marginBottom="65dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:background="#ff1a75"
         android:textColor="#ffffff"
         android:textColorHighlight="#6f6e6e"
         android:textStyle="bold"
-        android:layout_marginTop="20dp"
         android:clickable="true"
         android:enabled="true"
         android:elegantTextHeight="false"
         android:shadowColor="#ffffff"
         android:soundEffectsEnabled="true"
-        android:onClick="exitApp" />
+        android:onClick="exitApp"
+        android:layout_below="@+id/resetActivity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/resetActivity"
+        android:layout_alignEnd="@+id/resetActivity"
+        android:layout_marginTop="20dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -123,6 +126,45 @@
         android:enabled="true"
         android:elegantTextHeight="false"
         android:shadowColor="#ffffff"
-        android:soundEffectsEnabled="true" />
+        android:soundEffectsEnabled="true"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="My Event Manager"
+        android:id="@+id/txtName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/addActivity"
+        android:layout_alignEnd="@+id/addActivity"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="0dp"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:textColor="#e60059"
+        android:phoneNumber="false"
+        android:password="false"
+        android:gravity="center_horizontal"
+        android:typeface="serif"
+        android:shadowColor="#c2c2c2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="MEM Team"
+        android:id="@+id/txtMem"
+        android:textColor="#e60059"
+        android:layout_alignRight="@+id/exitApp"
+        android:layout_alignEnd="@+id/exitApp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:gravity="center_horizontal" />
 
 </RelativeLayout>

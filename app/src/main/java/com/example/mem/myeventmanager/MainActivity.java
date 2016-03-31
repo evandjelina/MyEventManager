@@ -1,5 +1,6 @@
 package com.example.mem.myeventmanager;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Intent;
+import android.os.Vibrator;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
     }
     public void addActivity(View view) {
         if(view.getId()==R.id.addActivity){
+            Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+            v.vibrate(50);
             Intent intent = new Intent(this, AddActivity.class);
             startActivity(intent);
         }
@@ -40,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
 // otvara listu
     public void listActivity(View view) {
         if(view.getId()==R.id.manageActivities){
+            Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+            v.vibrate(50);
             Intent intent = new Intent(this, ListActivities.class);
             startActivity(intent);
         }
@@ -48,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void openCal(View view) {
         if(view.getId()==R.id.openCalendar){
+            Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+            v.vibrate(50);
             Intent intent = new Intent(this, OpenCal.class);
             startActivity(intent);
         }
@@ -56,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void exitApp(View view){
         if(view.getId()==R.id.exitApp){
+            Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+            v.vibrate(50);
             this.finish();
             Intent intent = new Intent(Intent.ACTION_MAIN);
             intent.addCategory(Intent.CATEGORY_HOME);
@@ -86,4 +96,5 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }
