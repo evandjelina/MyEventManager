@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:background="#ff1a73">
+
+        <ImageView
+            android:layout_width="139dp"
+            android:layout_height="136dp"
+            android:id="@+id/imgMaja"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/maja"
+            android:maxHeight="64dp"
+            android:maxWidth="64dp"
+            android:minHeight="64dp"
+            android:minWidth="64dp"
+            android:layout_marginTop="25dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mailMaja"
+            android:layout_gravity="center_horizontal"
+            android:src="@android:drawable/ic_dialog_email"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Marija Antić"
+            android:id="@+id/txtMaja"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="166dp"
+            android:id="@+id/imgDjina"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/djina" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mailDjina"
+            android:layout_gravity="center_horizontal"
+            android:src="@android:drawable/ic_dialog_email"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Evanđelina Veličković"
+            android:id="@+id/txtDjina"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="216dp"
+            android:layout_height="140dp"
+            android:id="@+id/imgMaca"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/maca"
+            android:layout_weight="0.07" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mailMaca"
+            android:layout_gravity="center_horizontal"
+            android:src="@android:drawable/ic_dialog_email"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Marija Božinovska"
+            android:id="@+id/txtMaca"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Povratak u meni"
+            android:id="@+id/btnCancel"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/rounded_corner"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#e60059"
+            android:onClick="cancel" />
+
+    </LinearLayout>
+</ScrollView>
