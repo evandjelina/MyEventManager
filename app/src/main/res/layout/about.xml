@@ -22,14 +22,6 @@
             android:minWidth="64dp"
             android:layout_marginTop="25dp" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/mailMaja"
-            android:layout_gravity="center_horizontal"
-            android:src="@android:drawable/ic_dialog_email"
-            android:layout_marginTop="10dp" />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,7 +29,7 @@
             android:text="Marija Antić"
             android:id="@+id/txtMaja"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="7dp"
             android:textColor="#ffffff"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -48,14 +40,6 @@
             android:id="@+id/imgDjina"
             android:layout_gravity="center_horizontal"
             android:src="@drawable/djina" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/mailDjina"
-            android:layout_gravity="center_horizontal"
-            android:src="@android:drawable/ic_dialog_email"
-            android:layout_marginTop="10dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -77,14 +61,6 @@
             android:src="@drawable/maca"
             android:layout_weight="0.07" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/mailMaca"
-            android:layout_gravity="center_horizontal"
-            android:src="@android:drawable/ic_dialog_email"
-            android:layout_marginTop="10dp" />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -92,7 +68,7 @@
             android:text="Marija Božinovska"
             android:id="@+id/txtMaca"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:textColor="#ffffff"
             android:textSize="20dp"
             android:textStyle="bold"

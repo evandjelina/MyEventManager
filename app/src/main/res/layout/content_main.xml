@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-    <!-- Cao, cao  -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -19,7 +17,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dodaj novu aktivnost"
+        android:text="Vidi tutorijal"
         android:id="@+id/addActivity"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -44,7 +42,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Upravljaj postojećim aktivnostima"
+        android:text="Lista aktivnosti"
         android:id="@+id/manageActivities"
         android:layout_below="@+id/addActivity"
         android:layout_alignRight="@+id/addActivity"
@@ -109,40 +107,14 @@
         android:shadowColor="#ffffff"
         android:soundEffectsEnabled="true"
         android:onClick="exitApp"
-        android:layout_below="@+id/resetActivity"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="10dp"
         android:textSize="15dp"
-        android:layout_alignRight="@+id/resetActivity"
-        android:layout_alignEnd="@+id/resetActivity" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Resetuj događaj"
-        android:id="@+id/resetActivity"
         android:layout_below="@+id/openCalendar"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/openCalendar"
-        android:layout_alignEnd="@+id/openCalendar"
-        android:background="@drawable/rounded_corner"
-        android:textColor="#e60059"
-        android:textColorHighlight="#6f6e6e"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"
-        android:clickable="true"
-        android:enabled="true"
-        android:elegantTextHeight="false"
-        android:shadowColor="#ffffff"
-        android:soundEffectsEnabled="true"
-        android:layout_marginBottom="0dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:textSize="15dp" />
+        android:layout_alignEnd="@+id/openCalendar" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -183,6 +155,8 @@
         android:clickable="true"
         android:gravity="center_horizontal"
         android:onClick="aboutUS"
-        android:textStyle="bold" />
+        android:paddingBottom="50dp"
+        android:textSize="25dp"
+        android:textStyle="normal" />
 
 </RelativeLayout>

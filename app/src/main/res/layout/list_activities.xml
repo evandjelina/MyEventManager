@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
 
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:padding="10dp" />
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
     <Button
+        android:id="@+id/findSelected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vodič kroz upravljanje projektom"
+        android:textColor="#e60059"/>
+
+    <ListView android:id="@+id/listView1" android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        />
+
+    <!--<Button
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:text="Vrati se u meni"
@@ -15,19 +29,7 @@
         android:clickable="true"
         android:textColor="#ff1a73"
         android:textStyle="bold"
-        android:layout_marginBottom="25dp"
-        android:onClick="cancel" />
+        android:layout_marginBottom="25dp" />
+-->
 
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="409dp"
-        android:id="@+id/list_view"
-        android:layout_gravity="center_horizontal|top"
-        android:choiceMode="singleChoice"
-        android:clickable="true"
-        android:paddingTop="20dp" />
-
-</FrameLayout>
-
-
-
+</LinearLayout>
