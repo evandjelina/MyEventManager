@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:padding="10dp" />
+
+
+    <Button
+        android:id="@+id/findSelected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vodič kroz upravljanje projektom"
+        android:textColor="#e60059"/>
+
+    <ListView android:id="@+id/listView1" android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        />
+
+    <!--<Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Vrati se u meni"
+        android:id="@+id/btnCancel"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/rounded_corner"
+        android:clickable="true"
+        android:textColor="#ff1a73"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp" />
+-->
+
+</LinearLayout>
